@@ -1,0 +1,31 @@
+.mainScene {
+    -fx-background-color:#F4F1EB;
+}
+
+.sideBar{
+-fx-background-color:linear-gradient(to bottom, #23807C 0%, #1E6A66 100%);
+}
+
+.btnHamburger{
+    -fx-background-color:transparent;
+}
+
+.btnDashboard{
+    -fx-background-color:transparent;
+}
+
+.btnDaftarRuangan{
+    -fx-background-color:transparent;
+}
+
+.btnJadwal{
+    -fx-background-color:transparent;
+}
+
+.btnDaftarPengguna{
+    -fx-background-color:transparent;
+}
+
+.btnLogout{
+    -fx-background-color:transparent;
+}

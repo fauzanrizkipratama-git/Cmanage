@@ -1,0 +1,47 @@
+.root{
+    -fx-background-color:#F4F1EB;
+}
+
+.header{
+    -fx-background-color:#E5E3DF;
+    -fx-border-radius:100px;
+}
+
+.sideBar{
+    -fx-background-color:linear-gradient(to bottom, #23807C 0%, #1E6A66 100%);
+}
+
+.btnHamburger{
+    -fx-background-color:transparent;
+}
+
+.btnDashboard{
+    -fx-background-color:transparent;
+}
+
+.btnDaftarRuangan{
+    -fx-background-color:transparent;
+}
+
+.btnJadwal{
+    -fx-background-color:transparent;
+}
+
+.btnDaftarPengguna{
+    -fx-background-color:transparent;
+}
+
+.btnLogout{
+    -fx-background-color:transparent;
+}
+
+.btnTambahPengguna{
+    -fx-background-color:transparent;
+    -fx-border-width:2px, 2px, 2px, 2px;
+    -fx-border-color:#E5E3DF;
+    -fx-border-radius:40px;
+    -fx-border-style:solid;
+}
+
+.tvDaftarPengguna{
+}
