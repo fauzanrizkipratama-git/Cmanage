@@ -1,0 +1,62 @@
+.root-background {
+    -fx-background-image: url("/images/Background_Login.png");
+    -fx-background-repeat: repeat;
+    -fx-background-size: auto;
+    -fx-background-color: #f0f0f0;
+}
+
+.scene-utama {
+    -fx-background-color: white;
+    -fx-background-radius: 23px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 20, 0, 0, 5);
+}
+
+.formulir {
+    -fx-background-color: #F4F1EB;
+    -fx-background-radius: 0 12px 12px 0;
+}
+
+.input-field {
+    -fx-background-color: #E4E0DB;
+    -fx-background-radius: 6px;
+    -fx-border-color: #D0D0D0;
+    -fx-border-radius: 6px;
+    -fx-border-width: 1.5px;
+    -fx-padding: 12px 15px;
+    -fx-font-size: 13px;
+}
+
+.input-field:focused {
+    -fx-border-color: #246E6A;
+    -fx-border-width: 2px;
+    -fx-background-color: #E4E0DB;
+}
+
+.button-login {
+    -fx-background-color: #246E6A;
+    -fx-text-fill: white;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+}
+
+.button-login:hover {
+    -fx-background-color: #1d5854;
+    -fx-effect: dropshadow(gaussian, rgba(36, 110, 106, 0.3), 8, 0, 0, 2);
+}
+
+.button-login:pressed {
+    -fx-background-color: #164540;
+}
+
+.label-formulir {
+    -fx-text-fill: #1E6A66;
+}
+
+.label-selamat-datang{
+    -fx-text-fill: white;
+}
+
+.label-tanda-seru{
+    -fx-text-fill:#BA854E;
+}
