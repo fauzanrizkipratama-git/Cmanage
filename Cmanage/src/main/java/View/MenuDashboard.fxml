@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1391.0" styleClass="root" stylesheets="@../style/menudashboard.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuDashboarController">
+   <center>
+      <BorderPane prefHeight="400.0" prefWidth="616.0" BorderPane.alignment="CENTER">
+         <top>
+            <AnchorPane fx:id="header" prefHeight="59.0" prefWidth="1000.0" scaleZ="0.0" styleClass="header" stylesheets="@../style/menudashboard.css">
+               <children>
+                  <Label fx:id="lblGreeting" layoutX="25.0" layoutY="18.0" maxHeight="29.0" maxWidth="159.0" text="Dashboard" textFill="#204a48">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="790.0" prefWidth="1456.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox layoutX="27.0" layoutY="24.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="290.0" prefWidth="1336.0" styleClass="test1" stylesheets="@../style/menudashboard.css" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="28.0">
+                     <children>
+                        <AnchorPane prefHeight="290.0" prefWidth="290.0" styleClass="ketWaktuPerkuliahan" stylesheets="@../style/menudashboard.css" HBox.hgrow="ALWAYS">
+                           <children>
+                              <BorderPane prefHeight="94.0" prefWidth="95.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-2.0">
+                                 <center>
+                                    <ImageView fitHeight="70.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                       <image>
+                                          <Image url="@../Images/Icon_Daftar_Pengguna.png" />
+                                       </image>
+                                    </ImageView>
+                                 </center>
+                              </BorderPane>
+                              <Label alignment="CENTER" layoutX="70.0" layoutY="111.0" maxHeight="29.0" maxWidth="183.0" prefHeight="27.0" prefWidth="169.0" text="Jumlah Pengguna:" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblJumlahPengguna" alignment="CENTER" layoutX="66.0" layoutY="163.0" prefHeight="94.0" prefWidth="162.0" text="0" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="64.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="290.0" prefWidth="200.0" stylesheets="@../style/menudashboard.css" HBox.hgrow="ALWAYS" />
+                        <AnchorPane prefHeight="290.0" prefWidth="290.0" styleClass="ketRuangTersedia" stylesheets="@../style/menudashboard.css" HBox.hgrow="ALWAYS">
+                           <children>
+                              <BorderPane prefHeight="103.0" prefWidth="121.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-2.0">
+                                 <center>
+                                    <ImageView fitHeight="70.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                       <image>
+                                          <Image url="@../images/Icon_Dashboard2.png" />
+                                       </image>
+                                    </ImageView>
+                                 </center>
+                              </BorderPane>
+                              <Label alignment="CENTER" layoutX="69.0" layoutY="114.0" maxHeight="29.0" maxWidth="203.0" prefHeight="27.0" prefWidth="184.0" text="Ruangan Tersedia:" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblRuanganTersedia" alignment="CENTER" layoutX="77.0" layoutY="153.0" prefHeight="94.0" prefWidth="162.0" text="0/0" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="64.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="290.0" prefWidth="200.0" stylesheets="@../style/menudashboard.css" HBox.hgrow="ALWAYS" />
+                        <AnchorPane prefHeight="290.0" prefWidth="290.0" styleClass="ketJumlahRuang" stylesheets="@../style/menudashboard.css" HBox.hgrow="ALWAYS">
+                           <children>
+                              <BorderPane layoutX="87.0" layoutY="-21.0" prefHeight="105.0" prefWidth="102.0" AnchorPane.leftAnchor="87.0" AnchorPane.rightAnchor="94.6">
+                                 <bottom>
+                                    <ImageView fitHeight="70.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                       <image>
+                                          <Image url="@../images/Icon_Dashboard1.png" />
+                                       </image>
+                                    </ImageView>
+                                 </bottom>
+                              </BorderPane>
+                              <Label layoutX="83.0" layoutY="108.0" maxHeight="29.0" maxWidth="183.0" prefHeight="27.0" prefWidth="147.0" text="Jumlah Ruangan:" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblTotalRuangan" alignment="CENTER" layoutX="109.0" layoutY="158.0" prefHeight="94.0" prefWidth="78.0" text="0" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="64.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <BarChart fx:id="barChartStatistik" layoutX="138.0" layoutY="365.0" prefHeight="400.0" prefWidth="1096.0" title="Statistik Penggunaan Ruangan">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>

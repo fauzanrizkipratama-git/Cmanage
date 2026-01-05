@@ -1,0 +1,20 @@
+.root{
+    -fx-background-color:#F4F1EB;
+}
+
+.header{
+    -fx-background-color:#E5E3DF;
+    -fx-border-radius:100px;
+}
+
+
+.btnKelolaRuangan{
+    -fx-background-color:transparent;
+    -fx-border-width:2px, 2px, 2px, 2px;
+    -fx-border-color:#E5E3DF;
+    -fx-border-radius:40px;
+    -fx-border-style:solid;
+}
+
+.tvDaftarRuangan{
+}

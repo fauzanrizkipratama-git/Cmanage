@@ -1,0 +1,240 @@
+.root {
+    -fx-background-color: #F4F1EB;
+}
+.header {
+    -fx-background-color: #E5E3DF;
+    -fx-border-radius: 100px;
+    
+}
+.sideBar {
+    -fx-background-color: linear-gradient(to bottom, #23807C 0%, #1E6A66 100%);
+}
+/* Button Sidebar */
+.btnHamburger, .btnDashboard, .btnDaftarRuangan, 
+.btnJadwal, .btnDaftarPengguna, .btnLogout {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 12 20 12 20;
+    -fx-alignment: CENTER_LEFT;
+}
+.btnHamburger:hover, .btnDashboard:hover, .btnDaftarRuangan:hover, 
+.btnJadwal:hover, .btnDaftarPengguna:hover, .btnLogout:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+}
+/* Container Utama Putih */
+.layer1 {
+    -fx-background-color: white;
+    -fx-background-radius: 15px;
+    -fx-border-color: #1E90FF; 
+    -fx-border-radius: 15px;
+    -fx-border-width: 1px;
+    -fx-padding: 30px;
+}
+/* Card Statistik */
+.ketJumlahRuang {
+    -fx-background-color: #48D1CC;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-alignment: CENTER;
+    -fx-padding: 30px;
+}
+.ketRuangTersedia {
+    -fx-background-color: #B0E0E6;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-alignment: CENTER;
+    -fx-padding: 30px;
+}
+.ketWaktuPerkuliahan {
+    -fx-background-color: #49A69C;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-alignment: CENTER;
+    -fx-padding: 30px;
+}
+
+
+/* Tambahan styling teks agar mirip gambar */
+.labelLarge {
+    -fx-font-size: 60px;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+}
+.cardTextWhite {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.cardTextDark {
+    -fx-text-fill: #49A69C;
+    -fx-font-weight: bold;
+}
+
+/* =========================================================
+   STYLING TEKS DI DALAM CARD STATISTIK
+   ========================================================= */
+
+/* Label Judul Card (teks kecil di atas) */
+.cardTitle {
+    -fx-font-size: 16px;
+    -fx-font-weight: normal;
+    -fx-text-fill: white;
+}
+
+/* Label Nilai Card (angka besar) */
+.cardValue {
+    -fx-font-size: 56px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+/* Khusus untuk card Ruang Tersedia (teks biru tua) */
+.ketRuangTersedia .cardTitle {
+    -fx-text-fill: white;
+}
+
+.ketRuangTersedia .cardValue {
+    -fx-text-fill: white;
+}
+
+/* Icon di dalam card */
+.cardIcon {
+    -fx-font-size: 40px;
+    -fx-text-fill: white;
+}
+
+/* =========================================================
+   HEADER COMPONENTS
+   ========================================================= */
+
+/* Title Dashboard di header */
+.headerTitle {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+/* Profile button di kanan atas */
+.profileBtn {
+    -fx-background-color: #CCCCCC;
+    -fx-background-radius: 50%;
+    -fx-border-radius: 50%;
+    -fx-cursor: hand;
+    -fx-padding: 8px 15px 8px 15px;
+}
+
+.profileBtn .label {
+    -fx-text-fill: #555555;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+/* =========================================================
+   SIDEBAR ADDITIONAL STYLING
+   ========================================================= */
+
+/* Logo/Brand di sidebar */
+.brandLabel {
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-family: "Brush Script MT", cursive;
+    -fx-padding: 20px;
+}
+
+/* Icon di sidebar menu */
+.sidebarIcon {
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+}
+
+/* Menu item text */
+.menuText {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+/* =========================================================
+   SPACING & LAYOUT
+   ========================================================= */
+
+/* Container untuk 3 card statistik */
+.statsContainer {
+    -fx-spacing: 20px;
+    -fx-padding: 0 0 20 0;
+}
+
+/* Spacing antar elemen */
+.vbox-spacing {
+    -fx-spacing: 15px;
+}
+
+.hbox-spacing {
+    -fx-spacing: 15px;
+}
+
+/* =========================================================
+   FOKUS & INTERAKSI
+   ========================================================= */
+
+:focus {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.clickable {
+    -fx-cursor: hand;
+}
+
+/* =========================================================
+   RESPONSIVE TEXT SIZES
+   ========================================================= */
+
+/* Untuk judul card lebih spesifik */
+.ketJumlahRuang .cardTitle,
+.ketWaktuPerkuliahan .cardTitle {
+    -fx-font-size: 15px;
+}
+
+.ketRuangTersedia .cardTitle {
+    -fx-font-size: 15px;
+}
+
+/* Untuk nilai di waktu perkuliahan (format jam) */
+.ketWaktuPerkuliahan .cardValue {
+    -fx-font-size: 42px;
+}
+
+.statistikLogin {
+    .chart-series-line {
+    -fx-stroke: #1E6A66;
+    -fx-stroke-width: 3px;
+}
+
+.chart-line-symbol {
+    -fx-background-color: #1E6A66, white;
+    -fx-background-radius: 8px;
+    -fx-padding: 4px;
+}
+
+.chart-plot-background {
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+}
+
+.chart-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+.chart-series-line {
+    -fx-stroke: #1E6A66;
+    -fx-stroke-width: 3px;
+}
+
+.chart-line-symbol {
+    -fx-background-color: #1E6A66, white;
+    -fx-background-radius: 8;
+    -fx-padding: 4px;
+}
+
+}
